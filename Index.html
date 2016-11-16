@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+	<meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+	<title>Yandex Map Api</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- All JavaScript -->
+	<!-- JQuery 2<script type="text/javascript" src="js/jquery.min.js"></script> -->
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<!-- js for adaptive image-->
+	<script>
+	var html = document.documentElement;
+	/*document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';*/
+	document.cookie='resolution='+Math.max(html.clientWidth,html.clientHeight)+'; path=/';
+	/*alert(html.clientWidth);*/
+	</script>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+
+	<!-- Responsive Stylesheets -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/media.css">
+	<!-- Yandex Map-->
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript" src="js/yamap.js"></script>
+
+
+</head>
+<body>
+<div id="back">
+		<img  src="/img/background.png"> 
+</div>
+<div class="wrapper contact">
+	<div class="row">
+		<div class="span12">
+			<div class="column2">
+			<div id="map"></div>
+			</div>
+			<div class="column2">
+			<div class="adress">
+			<div class="block100"><span class="title1">Найдите нас</span></div>
+			<div class="category green" id="route4">
+				<p class="title">На общественном транспорте</p>
+			<p class="text">От ст.м. Ломоносовская автобусом 118, 95, 157 или на маршрутке к5, к16 до проспекта Александровской фермы. Далее пешком до Преображенского переулка (последний перекрёсток перед мостом). Далее держитесь левой стороны. Ориентир — пожарная часть слева от вас. Въёзд на территорию — через жёлтые металлические ворота и шлагбаум (напротив и чуть дальше пожарной части).</p>
+			</div>
+			<div class="category violet" id="route5">
+				<p class="title">На общественном транспорте</p>
+			<p class="text">От ст.м. Пролетарская автобусом 53, 115, 117 или на маршрутке к53, к15 до проспекта Александровской фермы. Далее пешком до Преображенского переулка (последний перекрёсток перед мостом). Далее держитесь левой стороны. Ориентир — пожарная часть слева от вас. Въёзд на территорию — через жёлтые металлические ворота и шлагбаум (напротив и чуть дальше пожарной части).</p>
+			</div>
+			<div class="category tomato" id="route1">
+				<p class="title"> На автомобиле через мост Александровской Фермы</p>
+			<p class="text">Через мост Александровской Фермы до Преображенского переулка (первый перекрёсток после моста). Далее поверните налево и держитесь левой стороны. Ориентир — пожарная часть слева от вас. Въёзд на территорию — через жёлтые металлические ворота и шлагбаум (напротив и чуть дальше пожарной части).</p>
+			</div>
+			<div class="category darkslategray" id="route2">
+				<p class="title"> На автомобиле с проспекта Славы</p>
+			<p class="text">По пр. Славы после Гамбургской площади поверните направо. Затем двигайтесь прямо до пересечения с Южным шоссе. На Южном шоссе поверните налево и проежайте под ж/д путями. Далее — направо по ул. Кибальчича. На перекрёстке с Преображенским переулком поверните налево. Ориентир — пожарная часть справа от вас. Въёзд на территорию — через жёлтые металлические ворота и шлагбаум (напротив и чуть ближе пожарной части).</p>		
+			</div>
+			<div class="category aqua" id="route3">
+				<p class="title"> На автомобиле через Невский путепровод</p>
+			<p class="text">Через Невский путепровод до ул. Седова. На перекрёстке пр. Александровской Фермы и ул. Седова поверните направо. На последнем перекрёстке перед мостом Александровской Фермы сверните в Преображенский переулок. Далее держитесь левой стороны. Ориентир — пожарная часть слева от вас. Въёзд на территорию — через жёлтые металлические ворота и шлагбаум (напротив и чуть дальше пожарной части).</p>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
